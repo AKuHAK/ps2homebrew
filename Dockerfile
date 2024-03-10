@@ -6,4 +6,5 @@ RUN git clone https://github.com/AKuHAK/ps2toolchain-ppc --depth 1 && \
     cd .. && \
     rm -rf PPC-Monitor
 ENV PS2SDKSRC /usr/local/ps2sdk
+ENV PATH $PATH:${PS2DEV}/powerpc/bin
 RUN git clone https://github.com/ps2dev/ps2sdk /usr/local/ps2sdk/ --depth 1
